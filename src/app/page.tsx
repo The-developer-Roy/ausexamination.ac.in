@@ -119,7 +119,7 @@ export default function Home() {
     return (
         <div className="min-h-screen w-screen bg-[url(/registration_login.jpg)] overflow-x-hidden overflow-y-auto  flex justify-center items-center flex-col gap-12 p-4">
             <Image height={145} width={145} src={"/au-logo.jpg"} alt="logo" />
-            <div className="rounded-lg h-[60%] w-[40%] bg-white flex justify-center items-center p-8 flex-col gap-10">
+            <div className="rounded-lg h-[50%] w-[90%] sm:h-[60%] sm:w-[40%] bg-white flex justify-center items-center p-8 flex-col gap-10">
                 <div className={`bg-[#dcf5e7] h-16 w-full rounded-lg flex justify-center items-center gap-2 p-2 ${credentialMsg ? `flex` : `hidden`}`}>
                     <ul className="text-red-500 list-disc w-[80%] text-sm">
                         <li>Registration number or password is incorrect.</li>
@@ -169,7 +169,7 @@ export default function Home() {
                     onClick={handleClose}
                     />
                 </div>
-                <h1 className="font-bold text-2xl mb-6">Log In to your Account</h1>
+                <h1 className="font-bold text-xl sm:text-2xl mb-6 text-center">Log In to your Account</h1>
                 <div className="flex flex-col w-full gap-2">
                     <label htmlFor="registration_number" className="text-sm font-bold text-left">Registration Number</label>
                     <input type="text" name="registration_number" id="reg_num" className="border border-black rounded-md p-1 outline-none bg-neutral-100" onChange={(e) => setRegistration_number(e.target.value)} />
